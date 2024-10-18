@@ -90,7 +90,15 @@ def stats_globales(data : dict)-> tuple:
     #enregistrement des données sous forme de tuple
     return global_mean, max_global, min_global
 
-def csv_creation(data):
+def csv_creation(data:dict)->csv:
+    """_summary_ take a collections of data for each employees in each subsidiary and return a csv containing informations name, job, and salary for each subsidiary and stats
+
+    Args:
+        data (dict): _description_ dict, original data.json 
+
+    Returns:
+        csv: _description_ return a csv with headers name, job and salary per subsidiary. subsidiary's stats appears after the employee's datas and the stats for the entire company appears at the end of the csv.
+    """
 
     #Récupération des données
     with open('employes_data_10_2024.json')as file:
@@ -98,7 +106,6 @@ def csv_creation(data):
 
     #Application de la première fonction pour avoir la clé salaire
     CalcSalary(data)
-
 
     #creation d'un fichier csv
     with open("stat_salary.csv", mode='w', newline='') as file:

@@ -4,6 +4,7 @@ from tkinter import *
 from tkinter import ttk
 from tkinter.filedialog import askopenfilename
 import tkinter.font as font
+from tkinter import messagebox
 import json
 import os
 from functions import CalcSalary, csv_creation, stat_subsidiary, stats_globales
@@ -16,16 +17,26 @@ label.pack()
 def traitement():    # On demande à l'utilisateur de sélectionner un fichier avec la commande askopenfilename, en lui laissant le choix entre Excel et CSV.
     chemin_fichier = askopenfilename(filetypes=[('.json', ('*.json', '*.JSON')), ('CSV', '*.csv')])
      # On lit le fichier dans la variable data
+    global data #
     with open('employes_data_10_2024.json')as file:
         data = json.load(file)
-
+        print('donnée chargées')
 
 ### la on met notre code de traitement ######
 
-def generate_csv(data):
-    csv_creation(data)
-
-
+#generation du csv
+def generate_csv():
+    global data
+    if data:
+        try:
+            csv_creation(data)  # Générer le CSV à partir des données
+            messagebox.showinfo("Succès", "Le fichier CSV a été généré avec succès.")
+        except Exception as e:
+            messagebox.showerror("Erreur", f"Erreur lors de la génération du CSV : {e}")
+    else:
+        messagebox.showerror("Erreur", "Aucune donnée chargée. Veuillez charger un fichier JSON.")
+    
+    
     # On récupère le chemin d'accès du dossier pour pouvoir générer un fichier Excel dans ce même dossier. 
     chemin_dossier = os.path.dirname(chemin_fichier)
 
@@ -57,14 +68,13 @@ listeCombo = ttk.Combobox(fenetre, values=listeProduits)
 listeCombo.current(0)
  
 listeCombo.pack()
-"""
-btn_generate_csv = tk.Button(root, text="Générer CSV", command=create_csv)
-btn_generate_csv.pack(pady=20)
-bouton=Button(fenetre, text="salaires", command=fenetre.generate_csv)
+#generation du csv après clickage bouton
+"""btn_generate_csv = tk.Button(root, text="Générer CSV", command=create_csv)
+btn_generate_csv.pack(pady=20)"""
+bouton=Button(fenetre, text="CSV", command=fenetre.generate_csv)
 bouton.pack()
-"""
-bouton=Button(fenetre, text="csv", command=fenetre.quit)
-bouton.pack()
+
+
 
 """##Fonction pop-up
 def popupmsg(msg):
