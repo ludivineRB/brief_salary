@@ -108,6 +108,7 @@ def csv_creation(data):
         #Parcours le dictionnaire de dictionnaire pour chaque filiale
         for subsidiary in data:
             writer.writerow([subsidiary])
+            writer.writerow([])
             #Parcours chaque dictionnaire"filiale" pour trouver chaque employé
             
             #les en-têtes (colonnes du CSV)
@@ -121,15 +122,22 @@ def csv_creation(data):
             writer.writerow([])
             
             # statistiques de chaque filiale
-            writer.writerow(["Statistiques"])
+            writer.writerow([f"Statistiques: {subsidiary}"])
             writer.writerow(["Salaire maximum", f"{stat_subsidiary(subsidiary)[1]:.2f}"])
             writer.writerow(["Salaire minimum", f"{stat_subsidiary(subsidiary)[2]:.2f}"])
             writer.writerow(["Salaire moyen", f"{stat_subsidiary(subsidiary)[0]:.2f}"])
+            writer.writerow([])
 
-            # Ajout une ligne vide pour séparer les stats des employés
-            writer.writerow([])
-            writer.writerow([])
-            writer.writerow([])
+        # Ajout une ligne vide pour séparer les stats générales
+        writer.writerow([])
+        writer.writerow([])
+        writer.writerow([])
+
+        writer.writerow(["Statistiques globales de l'entreprise :"])
+        writer.writerow([f"Salaire moyen : {stats_globales(data)[0]:.2f}"])
+        writer.writerow([f"Salaire max : {stats_globales(data)[1]:.2f}"])
+        writer.writerow([f"Salaire moin : {stats_globales(data)[2]:.2f}"])       
+
 
         print(f"Fichier CSV '{"employes_data_10_2024.json"}' créé avec succès.")
 

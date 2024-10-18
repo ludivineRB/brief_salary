@@ -1,4 +1,5 @@
 TechCorp
+
 Name,Job,Salary
 Helen,Chef de projet,9500.0
 Quincy,Testeur,5824.0
@@ -16,12 +17,13 @@ Mike,Chef de projet,8900.0
 Charlie,Chef de projet,6400
 Helen,Testeur,6104.0
 
-Statistiques
+Statistiques: TechCorp
 Salaire maximum,11300.00
 Salaire minimum,3600.00
 Salaire moyen,6975.60
 
 DesignWorks
+
 Name,Job,Salary
 Jack,Analyste,6080
 Emma,Designer,4080
@@ -42,12 +44,13 @@ Mike,Manager,7040
 Ian,Chef de projet,8200.0
 Bob,Chef de projet,10000.0
 
-Statistiques
+Statistiques: DesignWorks
 Salaire maximum,10700.00
 Salaire minimum,3960.00
 Salaire moyen,6748.11
 
 ProjectLead
+
 Name,Job,Salary
 Fred,Testeur,5992.0
 Mike,Développeur,4480
@@ -67,8 +70,15 @@ Linda,Développeur,5110.0
 Jack,Testeur,5768.0
 Charlie,Chef de projet,8500.0
 
-Statistiques
+Statistiques: ProjectLead
 Salaire maximum,11330.00
 Salaire minimum,4480.00
 Salaire moyen,6945.88
 
+
+
+
+Statistiques globales de l'entreprise :
+Salaire moyen : 6889.86
+Salaire max : 11330.00
+Salaire moin : 3600.00
