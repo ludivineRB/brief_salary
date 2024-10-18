@@ -17,7 +17,7 @@ Mike,Chef de projet,8900.0
 Charlie,Chef de projet,6400
 Helen,Testeur,6104.0
 
-Statistiques: TechCorp
+Statistiques TechCorp
 Salaire maximum,11300.00
 Salaire minimum,3600.00
 Salaire moyen,6975.60
@@ -44,7 +44,7 @@ Mike,Manager,7040
 Ian,Chef de projet,8200.0
 Bob,Chef de projet,10000.0
 
-Statistiques: DesignWorks
+Statistiques DesignWorks
 Salaire maximum,10700.00
 Salaire minimum,3960.00
 Salaire moyen,6748.11
@@ -70,7 +70,7 @@ Linda,Développeur,5110.0
 Jack,Testeur,5768.0
 Charlie,Chef de projet,8500.0
 
-Statistiques: ProjectLead
+Statistiques ProjectLead
 Salaire maximum,11330.00
 Salaire minimum,4480.00
 Salaire moyen,6945.88
@@ -79,6 +79,6 @@ Salaire moyen,6945.88
 
 
 Statistiques globales de l'entreprise :
-Salaire moyen : 6889.86
-Salaire max : 11330.00
-Salaire moin : 3600.00
+Salaire moyen :,6889.86
+Salaire max :,11330.00
+Salaire min :,3600.00
