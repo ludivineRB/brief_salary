@@ -1,7 +1,7 @@
 import json
 import csv
 
-def CalcSalary(d:dict):
+def CalcSalary(d:dict[dict]):
     """_summary_ Return a modification of the original file with the addition of a couple key-value for salary
 
     Args:
@@ -27,7 +27,7 @@ def CalcSalary(d:dict):
      
    
 
-def stat_subsidiary(subsidiary:dict)->tuple: 
+def stat_subsidiary(subsidiary: list[dict])->tuple:  #on peut aller comme ça modifier tous les trucs jusqu'à str, int dans les listes de dict
     """_summary_return the maximal salary, the minimal salary and the average salary for a subsidiary
 
     Args:
