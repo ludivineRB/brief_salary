@@ -1,0 +1,74 @@
+TechCorp
+Name,Job,Salary
+Helen,Chef de projet,9500.0
+Quincy,Testeur,5824.0
+Fred,Manager,7260
+Steve,Chef de projet,6400
+Linda,Chef de projet,6800
+Bob,Analyste,5600
+Steve,Chef de projet,11300.0
+Karen,Développeur,4620
+Paul,Designer,3600
+Bob,Développeur,7630.0
+Bob,Manager,11000.0
+Mike,Testeur,3696
+Mike,Chef de projet,8900.0
+Charlie,Chef de projet,6400
+Helen,Testeur,6104.0
+
+Statistiques
+Salaire maximum,11300.00
+Salaire minimum,3600.00
+Salaire moyen,6975.60
+
+DesignWorks
+Name,Job,Salary
+Jack,Analyste,6080
+Emma,Designer,4080
+Ian,Chef de projet,7600.0
+Tina,Testeur,6104.0
+Oliver,Chef de projet,10700.0
+Jack,Designer,3960
+Oliver,Manager,10450.0
+Rachel,Testeur,4256.0
+Ian,Testeur,5152.0
+Jack,Chef de projet,7600.0
+Rachel,Analyste,5120
+Helen,Développeur,5320.0
+George,Développeur,4200
+Rachel,Testeur,6104.0
+Emma,Chef de projet,9500.0
+Mike,Manager,7040
+Ian,Chef de projet,8200.0
+Bob,Chef de projet,10000.0
+
+Statistiques
+Salaire maximum,10700.00
+Salaire minimum,3960.00
+Salaire moyen,6748.11
+
+ProjectLead
+Name,Job,Salary
+Fred,Testeur,5992.0
+Mike,Développeur,4480
+Oliver,Chef de projet,7900.0
+Tina,Manager,8140
+Linda,Testeur,4480.0
+Rachel,Designer,6540.0
+Bob,Manager,11330.0
+Steve,Chef de projet,9500.0
+Jack,Chef de projet,6200
+Jack,Designer,6180.0
+Charlie,Manager,10120.0
+Oliver,Développeur,4900
+Nina,Analyste,7600.0
+Steve,Designer,5340.0
+Linda,Développeur,5110.0
+Jack,Testeur,5768.0
+Charlie,Chef de projet,8500.0
+
+Statistiques
+Salaire maximum,11330.00
+Salaire minimum,4480.00
+Salaire moyen,6945.88
+
